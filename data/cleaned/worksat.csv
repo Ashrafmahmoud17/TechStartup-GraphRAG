@@ -1,0 +1,27 @@
+﻿person_name,company_name,role,current
+Robert Nguyen,CloudNest,CEO,True
+Linda Park,StreamWave,CEO,True
+Samuel Adeyemi,FoodChain,CTO,True
+Fatima Al-Sayed,SecureLayer,CTO,True
+Victor Petrov,QuantumLeap,COO,True
+Emma Larsson,GreenGrid,CPO,True
+Daniel Cohen,SecureLayer,CFO,True
+Ananya Iyer,HealthLoop,CTO,True
+Michael Torres,StreamWave,CEO,True
+Sarah Bennett,PropertyPro,CMO,True
+Elena Rossi,NovaPay,CEO,True
+Marcus Chen,DataForge,Executive Chairman,True
+Marcus Chen,VoiceCraft,CEO,True
+Priya Nair,EduSpark,CEO,True
+Grace Kim,VirtualForge,CEO,True
+Grace Kim,MediChain,Board Member,False
+Ethan Brooks,CloudNest,Board Member,False
+Ethan Brooks,FinLedger,CEO,True
+Robert Nguyen,DataForge,Advisor,False
+Ananya Iyer,DataForge,Engineer,False
+Sofia Lindqvist,GreenGrid,CEO,True
+Yuki Tanaka,GameForge,CEO,True
+Fatima Al-Sayed,DataForge,Engineer,False
+Sarah Bennett,NovaPay,Marketing Lead,False
+Daniel Cohen,NovaPay,Advisor,False
+Elena Rossi,NovaPay,Founder,True

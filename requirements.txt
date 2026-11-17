@@ -1,0 +1,14 @@
+
+pandas
+openpyxl
+neo4j
+python-dotenv
+groq
+cohere
+fastapi
+uvicorn[standard]
+streamlit
+requests
+pytest
+scikit-learn
+neo4j
