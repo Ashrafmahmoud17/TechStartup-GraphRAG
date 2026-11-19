@@ -7,7 +7,12 @@ import streamlit as st
 # Configuration
 # =========================
 
-API_URL = os.getenv("API_URL", "http://127.0.0.1:8010")
+try:
+    API_URL = st.secrets["API_URL"]
+except Exception:
+    API_URL = os.getenv("API_URL", "http://127.0.0.1:8010")
+
+API_URL = API_URL.rstrip("/")
 
 st.set_page_config(
     page_title="VentureLens",
@@ -265,14 +270,18 @@ with st.sidebar:
     <div class="brand-sub">Startup Intelligence</div>
     """, unsafe_allow_html=True)
 
-    st.markdown('<div class="side-label">WORKSPACE</div>',
-                unsafe_allow_html=True)
+    st.markdown(
+        '<div class="side-label">WORKSPACE</div>',
+        unsafe_allow_html=True
+    )
 
     st.markdown("### 💬  AI Assistant")
     st.caption("Explore the startup ecosystem.")
 
-    st.markdown('<div class="side-label">SEARCH SETTINGS</div>',
-                unsafe_allow_html=True)
+    st.markdown(
+        '<div class="side-label">SEARCH SETTINGS</div>',
+        unsafe_allow_html=True
+    )
 
     top_k = st.slider(
         "Retrieved companies",
@@ -281,8 +290,10 @@ with st.sidebar:
         value=5
     )
 
-    st.markdown('<div class="side-label">SYSTEM STATUS</div>',
-                unsafe_allow_html=True)
+    st.markdown(
+        '<div class="side-label">SYSTEM STATUS</div>',
+        unsafe_allow_html=True
+    )
 
     if api_online:
         st.markdown(
@@ -297,8 +308,10 @@ with st.sidebar:
             unsafe_allow_html=True
         )
 
-    st.markdown('<div class="side-label">TECH STACK</div>',
-                unsafe_allow_html=True)
+    st.markdown(
+        '<div class="side-label">TECH STACK</div>',
+        unsafe_allow_html=True
+    )
 
     st.markdown("""
     <div class="side-info">
