@@ -1,13 +1,6 @@
 
-pandas
-openpyxl
+fastapi
 neo4j
 python-dotenv
 groq
 cohere
-fastapi
-uvicorn[standard]
-streamlit
-requests
-pytest
-scikit-learn
